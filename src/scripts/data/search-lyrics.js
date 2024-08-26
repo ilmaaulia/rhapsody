@@ -20,7 +20,7 @@ class SongSearch {
     this.searchButton.classList.add('d-none');
 
     try {
-      const response = await fetch(`https://song-lyrics-api.azharimm.dev/search?q=${this.searchInput.value}`);
+      const response = await fetch(`https://this-song-lyrics.vercel.app/search?q=${this.searchInput.value}`);
       const { status, data } = await response.json();
 
       if (status && data.length > 0) {

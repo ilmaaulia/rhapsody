@@ -6,7 +6,7 @@ class Detail {
 
   async detailLyrics() {
     try {
-      const response = await fetch(`https://song-lyrics-api.azharimm.dev/lyrics/${this.songId}`);
+      const response = await fetch(`https://this-song-lyrics.vercel.app/lyrics/${this.songId}`);
       const { status, data } = await response.json();
 
       if (status) {
