@@ -20,13 +20,9 @@ class SongSearch {
     this.searchButton.classList.add('d-none');
 
     try {
-<<<<<<< HEAD
       const response = await fetch(`https://those-lyrics.vercel.app/search?q=${this.searchInput.value}`, {
         mode: 'no-cors', // Temporary workaround for CORS
       });
-=======
-      const response = await fetch(`https://this-song-lyrics.vercel.app/search?q=${this.searchInput.value}`);
->>>>>>> 0e7eb9f362fa46c52284f361a08a40f4abd2a667
       const { status, data } = await response.json();
 
       if (status && data.length > 0) {
